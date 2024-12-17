@@ -294,4 +294,83 @@ greeting()
 // console.log(testing);
 
 
+function Saybaba(name){
+    return console.log('hello'+ name);
+}
+Saybaba("ridwan")
+
+function Saybaba2(name,course,job,firm){
+    return console.log( 'my name is' + name+'i am studying' + course+'i want to be a' + job+ 'at' + firm )
+}
+Saybaba2( 'Kitan', 'Software developer', 'photographer', 'google' )
+
+function areaOfSun(r){
+    var areaOfSun = 4*(Math.PI)*r**2
+    return console.log(Math.round(areaOfSun))
+}
+areaOfSun(695700)
+
+var movies = ['Game of thrones', 'Merlin', 'Seeker', 'Venom', 'Avatar']
+console.log(movies[2])
+
+movies[1]= 'osofiainlondon'
+console.log(movies);
+
+movies.push("Merlin");
+console.log(movies);
+
+movies.shift();
+console.log(movies);
+
+movies.unshift();
+console.log(movies);
+
+movies.splice();
+console.log(movies);  
+
+
+var employee = {
+    fullName: 'Alabi Ridwan',
+    email: 'yungridofficial@gmail.com',
+    phone: 8086623211,
+    married: false,
+    age: 27,
+    skills: ['Football', 'Tennis', 'Music'],
+    address: {
+        Street:'58 old yaba road',
+        City:  'Yaba',
+        State:  'Lagos',
+        Country: 'Nigeria',
+    },
+    salary: 300000,
+
+    mortgage: function(){
+        return this.salary*(30/100);
+
+    },
+
+    tax: function(){
+        return this.salary*(12.5/100);
+    },
+
+    tithe: function(){
+        return this.salary*(10/100);
+    }
+}
+
+console.log(employee.mortgage());
+
+console.log(employee.tax());
+
+console.log(employee.tithe());
+
+
+console.log(employee.skills);
+
+employee.skills[0]='Football'
+console.log(employee.skills);
+
+
+    
+
 
